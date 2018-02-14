@@ -10,3 +10,5 @@ chkconfig zabbix-agent on
 
 /etc/init.d/zabbix-agent start
 /etc/init.d/zabbix-agent restart
+
+## TEST
