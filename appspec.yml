@@ -17,6 +17,8 @@ hooks:
       runas: root
     - location: scripts/startapache.sh
       runas: root
+    - location: scripts/zabbix-install-agent.sh
+      runas: root
    AfterInstall:
     - location: scripts/restartapache.sh
       runas: root
