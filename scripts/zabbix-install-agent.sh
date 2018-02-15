@@ -1,7 +1,7 @@
 #!/bin/bash
 rpm -Uvh http://repo.zabbix.com/zabbix/3.2/rhel/6/x86_64/zabbix-release-3.2-1.el6.noarch.rpm
 yum install -y zabbix-agent
-yum -y install jq
+yum install -y jq
 
 chkconfig zabbix-agent on
 
