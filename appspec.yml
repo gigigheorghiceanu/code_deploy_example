@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /opt/files
+     destination: /opt/devops-tools
 permissions:
-   - object: /opt/files
+   - object: /opt/devops-tools
      pattern: "**"
      owner: root
      group: root
