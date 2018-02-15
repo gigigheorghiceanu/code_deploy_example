@@ -17,6 +17,6 @@ hooks:
       runas: root
     - location: scripts/zabbix-delete-host.sh
       runas: root
-  AfterInstall:
+   AfterInstall:
     - location: scripts/zabbix-setup-init.sh
       runas: root
