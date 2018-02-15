@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/bin/cp /opt/files/zabbix-delete-host.sh /etc/init.d
+/bin/cp /opt/files/scripts/zabbix-delete-host.sh /etc/init.d
 
 /etc/init.d/zabbix-delete-host.sh start
 
