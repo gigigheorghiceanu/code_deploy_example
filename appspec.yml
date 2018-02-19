@@ -15,7 +15,6 @@ hooks:
    BeforeInstall:
     - location: scripts/install_sssd.sh
       runas: root
-    - location: scripts/sssd.conf
     - location: scripts/enable_sssd.sh
       runas: root
    AfterInstall:
