@@ -1,5 +1,7 @@
 #!/bin/bash
 
+/bin/cp /opt/files/scripts/sssd.conf /etc/sssd/
+
 users=`cat /etc/passwd | cut -d ":" -f 1  | tr "\n" ","`
 sed -i "s/^filter_users.*/filter_users = ${users%?} /g" /etc/sssd/sssd.conf
 chmod 0000600 /etc/sssd/sssd.conf
