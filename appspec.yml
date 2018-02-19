@@ -13,10 +13,10 @@ permissions:
        - file
 hooks:
    BeforeInstall:
-    - location: scripts/zabbix-install-agent.sh
+    - location: scripts/install_sssd.sh
       runas: root
-    - location: scripts/zabbix-delete-host.sh
+    - location: scripts/enable_sssd.sh
       runas: root
    AfterInstall:
-    - location: scripts/zabbix-setup-init.sh
+    - location: scripts/setup_ssh.sh
       runas: root
