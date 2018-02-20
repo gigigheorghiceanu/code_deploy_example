@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#/bin/cp /opt/files/scripts/sssd.conf /etc/sssd/
 
 echo " " >> /etc/ssh/sshd_config
 echo "AuthorizedKeysCommand /usr/bin/sss_ssh_authorizedkeys" >> /etc/ssh/sshd_config
