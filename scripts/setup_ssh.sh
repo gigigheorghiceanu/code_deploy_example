@@ -17,7 +17,7 @@ if [ "$c" -eq "0" ];then
 fi
 
 d=$(cat /etc/sudoers | grep %dev-root | wc -l)
-if [ "$c" -eq "0" ];then
+if [ "$d" -eq "0" ];then
         echo "%dev-root ALL=(ALL)  ALL"  >> /etc/sudoers
 fi
 
