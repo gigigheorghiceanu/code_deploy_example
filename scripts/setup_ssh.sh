@@ -16,6 +16,13 @@ if [ "$c" -eq "0" ];then
 	echo "%devops ALL=(ALL)  ALL"  >> /etc/sudoers
 fi
 
+d=$(cat /etc/sudoers | grep %dev-root | wc -l)
+if [ "$c" -eq "0" ];then
+        echo "%dev-root ALL=(ALL)  ALL"  >> /etc/sudoers
+fi
+
+
+
 service sshd restart
 service sssd restart
 
